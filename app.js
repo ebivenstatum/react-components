@@ -15,6 +15,7 @@ class App extends React.Component {
   }
 
   handleSubmit(event) {
+    event.preventDefault();
     let newItem = <li>{this.state.value}</li>;
     this.setState({
       value: '',
